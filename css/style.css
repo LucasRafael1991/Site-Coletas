@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #afeef0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    background-color: #95a4c5;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid white;
+    position: relative;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 32px;
+  }
+  
+  #user-greeting {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-weight: bold;
+  }
+  
+  main {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+  }
+  
+  aside {
+    background-color: #a1deee;
+    color: #fff;
+    width: 160px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  
+  nav {
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    background-color: #95a4c5;
+  }
+  
+  ul ul {
+    display: none;
+    background-color: #95a4c5;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  ul li:hover > ul {
+    display: block;
+  }
+  
+  ul ul li {
+    margin-bottom: 5px;
+  }
+  
+  ul ul a {
+    padding: 8px;
+    border-radius: 3px;
+  }
+  
+  ul ul a:hover {
+    background-color: #a1deee;
+  }
+  
+  section {
+    background-color: #fff;
+    padding: 20px;
+    flex-grow: 1;
+    border-radius: 10px;
+  }
+  
+  footer {
+    background-color: #706e6e;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-size: 10px;
+    margin-top: auto;
+  }
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 10px;
+    }
+  
+    header h1 {
+      font-size: 24px;
+    }
+  
+    #user-greeting {
+      position: static;
+      margin-top: 10px;
+    }
+  
+    main {
+      flex-direction: column;
+    }
+  
+    aside {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    section {
+      border-radius: 0;
+    }
+  }
